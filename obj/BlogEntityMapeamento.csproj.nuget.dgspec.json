@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\fchaves\\source\\repos\\EntityIntroductions\\BlogEntity\\BlogEntityMapeamento\\BlogEntityMapeamento.csproj": {}
+    "C:\\Users\\fchaves\\source\\repos\\EntityIntroductions\\BlogEntityMapeamento\\Mapeamento-Entity\\BlogEntityMapeamento.csproj": {}
   },
   "projects": {
-    "C:\\Users\\fchaves\\source\\repos\\EntityIntroductions\\BlogEntity\\BlogEntityMapeamento\\BlogEntityMapeamento.csproj": {
+    "C:\\Users\\fchaves\\source\\repos\\EntityIntroductions\\BlogEntityMapeamento\\Mapeamento-Entity\\BlogEntityMapeamento.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\fchaves\\source\\repos\\EntityIntroductions\\BlogEntity\\BlogEntityMapeamento\\BlogEntityMapeamento.csproj",
+        "projectUniqueName": "C:\\Users\\fchaves\\source\\repos\\EntityIntroductions\\BlogEntityMapeamento\\Mapeamento-Entity\\BlogEntityMapeamento.csproj",
         "projectName": "BlogEntityMapeamento",
-        "projectPath": "C:\\Users\\fchaves\\source\\repos\\EntityIntroductions\\BlogEntity\\BlogEntityMapeamento\\BlogEntityMapeamento.csproj",
+        "projectPath": "C:\\Users\\fchaves\\source\\repos\\EntityIntroductions\\BlogEntityMapeamento\\Mapeamento-Entity\\BlogEntityMapeamento.csproj",
         "packagesPath": "C:\\Users\\fchaves\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\fchaves\\source\\repos\\EntityIntroductions\\BlogEntity\\BlogEntityMapeamento\\obj\\",
+        "outputPath": "C:\\Users\\fchaves\\source\\repos\\EntityIntroductions\\BlogEntityMapeamento\\Mapeamento-Entity\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -44,6 +44,12 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameWorkCore.SqlServer": {
+              "target": "Package",
+              "version": "[7.0.1, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
