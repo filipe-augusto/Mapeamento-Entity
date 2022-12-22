@@ -15,4 +15,5 @@ public class Post{
     public Category Category { get; set; }
     public int AuthorId { get; set; }  
     public User Author { get; set; } 
+    public List<Tag> Tags { get; set; }
 }
