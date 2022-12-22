@@ -21,7 +21,14 @@ public class PostMap : IEntityTypeConfiguration<Post>
         .HasColumnType("SMALLDATETIME")
         //.HasDefaultValueSql("GETDATE()")
         .HasDefaultValue(DateTime.Now.ToUniversalTime());
+         builder.HasIndex(x => x.Slug, "IX_Post_Slug").IsUnique();
+       
+        //Relacionamentos
+         builder.HasOne(x => x.Author).WithMany(x => x.Posts).HasConstraintName("FK_Post_Author")
+         .OnDelete(DeleteBehavior.Cascade);//quando exclui um post exclui os  autores relacionados ao post;
 
-        builder.HasIndex(x => x.Slug, "IX_Post_Slug").IsUnique();
+        builder.HasOne(x=> x.Category).WithMany(x=> x.Posts)
+        .HasConstraintName("FK_Post_Category")
+        .OnDelete(DeleteBehavior.NoAction);
     }
 }
