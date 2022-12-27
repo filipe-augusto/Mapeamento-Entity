@@ -6,6 +6,7 @@ using Microsoft.EntityFrameworkCore;
 //dotnet ef migrations add InitialCreation
 // dotnet ef database update
 //dotnet add package  Microsoft.EntityFrameworkCore.Design
+//dotnet ef migrations script -o ./script.sql //criar um script apartir sql 
  using var context = new BlogDataContext();
 context.Users.Add(new User{
    Bio = "20x microsoft MVP",
