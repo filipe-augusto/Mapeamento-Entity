@@ -22,7 +22,7 @@ public class UserMap : IEntityTypeConfiguration<User>
         .HasColumnName("Name")
         .HasColumnType("NVARCHAR")
         .HasMaxLength(30);
-
+        builder.Property(x => x.Github);
         builder.Property(x => x.Bio);
         builder.Property(x => x.Email);
         builder.Property(x => x.Image);

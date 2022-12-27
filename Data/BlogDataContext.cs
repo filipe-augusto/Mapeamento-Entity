@@ -13,7 +13,8 @@ public class BlogDataContext : DbContext{
 
     protected override void OnConfiguring(DbContextOptionsBuilder options)
     =>
-     options.UseSqlServer(@"Data Source=IM-BRS-NT1071\MSSQLSERVER01;Integrated Security=True;Connect Timeout=30;Initial Catalog=Blog; Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
+     //options.UseSqlServer(@"Data Source=IM-BRS-NT1071\MSSQLSERVER01;Integrated Security=True;Connect Timeout=30;Initial Catalog=Blog; Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
+     options.UseSqlServer(@"Data Source=IM-BRS-NT1071\MSSQLSERVER01;Integrated Security=True;Connect Timeout=30;Initial Catalog=Blog3; Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
      
   protected override  void OnModelCreating(ModelBuilder modelBuilder){
         modelBuilder.ApplyConfiguration(new CategoryMap());
